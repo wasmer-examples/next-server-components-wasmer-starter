@@ -3,6 +3,8 @@ import getItem from 'lib/get-item'
 import getComments from 'lib/get-comments';
 import styles from './page.module.css';
 
+export const runtime = 'edge';
+
 export default async function Comments({ params }) {
   const { id } = params
   const story = await getItem(id)

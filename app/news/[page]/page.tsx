@@ -2,6 +2,7 @@ import Stories from 'components/stories'
 import fetchData from 'lib/fetch-data'
 
 export const dynamicParams = true
+export const runtime = 'edge';
 
 export async function generateStaticParams() {
   return [1]

@@ -3,13 +3,7 @@ import 'server-only'
 
 const fetchData = cache(async (type: string) => {
   const res = await fetch(
-    `https://hacker-news.firebaseio.com/v0/${type}.json`,
-    {
-      next: {
-        revalidate: 10
-      }
-    }
-  )
+    `https://hacker-news.firebaseio.com/v0/${type}.json`)
   if (res.status !== 200) {
     throw new Error(`Status ${res.status}`)
   }
