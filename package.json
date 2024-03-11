@@ -3,6 +3,8 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
+    "edge:build": "npx @cloudflare/next-on-pages",
+    "edge:preview": "wasmer run . --net",
     "start": "next start"
   },
   "dependencies": {
