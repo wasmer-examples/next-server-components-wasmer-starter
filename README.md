@@ -2,6 +2,8 @@
 
 Try the demo live here: [**next-rsc-hn.wasmer.app**](https://next-rsc-hn.wasmer.app).
 
+> Note: This app is a clone of [Next.js Server Components demo](https://github.com/vercel/next-react-server-components/), [minimally adapted](https://github.com/wasmer-examples/next-server-components-wasmer-starter/commit/0b2afd3a6e633caf7e43a89f4a89cd349365b482) to run in [WinterJS](https://github.com/wasmerio/winterjs).
+
 ## Introduction
 
 This is a demo app of the Hacker News website clone, which shows Next.js App Router with support for React Server Components.
