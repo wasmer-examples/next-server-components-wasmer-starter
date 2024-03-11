@@ -1,0 +1,4 @@
+---
+kind: wasmer.io/App.v0
+name: next-rsc-hn
+package: wasmer-examples/next-server-components-wasmer-starter@0.3.0

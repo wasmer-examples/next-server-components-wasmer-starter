@@ -1,6 +1,6 @@
 # Next.js App Router + React Server Components
 
-Try the demo live here: [**next-rsc-hn.vercel.app**](https://next-rsc-hn.vercel.app).
+Try the demo live here: [**next-rsc-hn.wasmer.app**](https://next-rsc-hn.wasmer.app).
 
 ## Introduction
 
@@ -15,12 +15,20 @@ This is a demo app of the Hacker News website clone, which shows Next.js App Rou
 
 Go to `localhost:3000`.
 
-### Deploy
+If you want to run it with Wasmer locally, you can do `pnpm run edge:build` and then `pnpm run edge:preview`.
 
-You can quickly deploy the demo to Vercel by clicking this link:
+## Deploy on Wasmer Edge
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/templates/next.js/react-server-components)
+The easiest way to deploy this Next.js Server Side components app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
 
-## License
+Live example: https://next-rsc-hn.wasmer.app/
 
-This demo is MIT licensed.
+First, you'll need to run `npm run edge:build`, and then, to deploy to Wasmer Edge:
+
+```bash
+wasmer deploy
+```
+
+> [!NOTE]
+> You will need to have Wasmer installed (check out [the docs to install the Wasmer CLI](https://docs.wasmer.io/install)!). 
+> You will also need to change the namespace in `wasmer.toml` to your own namespace and app name in `app.yaml` to your own app name.
